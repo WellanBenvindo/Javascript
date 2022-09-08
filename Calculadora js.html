@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang = "pt-BR">
+<head>
+	<meta charset= "utf-8">
+	<title> Calculadora em JS </title>
+</head>
+
+<body>
+
+</body>
+
+	<script type="text/javascript">
+	
+		var numero1 = prompt("Insira o Primeiro Numero: ");
+		var numero2 = prompt("Insira o Segundo Numero:");
+		var operacao = prompt("Qual operação deseja realizar? (Digite + ou - ou * ou /)");
+		
+		var resultadoOperação = realizaOperacao(numero1, numero2, operacao);
+		
+		alert ('O resultado da operação é igual a :' + resultadoOperação);
+		
+			function realizaOperacao (numero1, numero2, op){
+				var resultado = 0;
+				// resultado = numero1 + eval (op) + numero2;
+				var resultado = eval(numero1 + op + numero2); 
+				
+				return resultado
+				}
+		
+	</script>
+</html>
